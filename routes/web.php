@@ -14,8 +14,11 @@ $router->get('/secciones-territorio', 'OtcController@getSeccionesTerritorio');
 $router->get('/secciones_clima', 'OtcController@getSeccionesClima');
 
 $router->get('/apps_territorio', 'OtcController@getAppsTerritorio');
+
 $router->get('/getAllFiles', 'OtcController@getAllFiles');
 
+
+$router->get('/publicaciones_secciones', 'OtcController@getPublicacionesSecciones');
 
 $router->get('/apps_clima', 'OtcController@getAppsClima');
 
@@ -27,9 +30,7 @@ $router->get('/contacto', 'OtcController@getContacto');
 
 $router->get('/pie_de_pagina', 'OtcController@getPieDePagina');
 
-$router->get('/boletines_territorio', 'OtcController@getBoletinesTerritorio');
-
-$router->get('/boletines_clima', 'OtcController@getBoletinesClima');
+$router->get('/boletines', 'OtcController@getBoletines');
 
 $router->get('/fecha_boletin', 'OtcController@getFechaBoletin');
 

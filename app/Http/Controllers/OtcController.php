@@ -91,17 +91,17 @@ class OtcController extends GoogleClientController
 
         return $files;
     }
-    public function getBoletinesTerritorio(){
-        $range = 'boletines_territorio!A1:E50';
+
+    public function getPublicacionesSecciones(){
+        $range = 'publicaciones_secciones!A1:EB50';
         $values = $this->serviceSheets->spreadsheets_values->get($this->spreadsheetId, $range)->getValues();
         return response()->json($values);
-
     }
-    public function getBoletinesClima(){
-        $range = 'boletines_clima!A1:E50';
+
+    public function getBoletines(){
+        $range = 'boletines!A1:E50';
         $values = $this->serviceSheets->spreadsheets_values->get($this->spreadsheetId, $range)->getValues();
         return response()->json($values);
-
     }
     public function getFechaBoletin(){
         $range = 'fecha_boletin!A1:B50';
